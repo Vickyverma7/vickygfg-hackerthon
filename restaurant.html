@@ -22,45 +22,72 @@
             background-size: cover;
             background-position: center;
         }*/
+        
+        body {
+            background: url('https://images.unsplash.com/photo-1551218808-94e220e084d2') no-repeat center center fixed;
+            background-size: cover;
+        }
+        
+        .form-container {
+            max-width: 420px;
+            margin: 5% auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .form-header {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .btn-restaurant {
+            background-color: #c0392b;
+            color: #fff;
+        }
+        
+        .btn-restaurant:hover {
+            background-color: #a93226;
+            color: #fff;
+        }
     </style>
 
 </head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <img src="./Restaurant-Logo-Design-2-2048x1152-removebg-preview.png" alt="logro" width="150" height="90">
-            <!--<a class="navbar-bgrand" href="family restaurant">Family Restaurant</a>-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+        <img src="./Restaurant-Logo-Design-2-2048x1152-removebg-preview.png" alt="logro" width="150" height="90">
+        <!--<a class="navbar-bgrand" href="family restaurant">Family Restaurant</a>-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">MENU</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">CONTACT</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2 " type="search " placeholder="Search " aria-label="Search ">
-                    <button class="btn btn-outline-secondary " type="submit ">Search</button>
-                </form>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">MENU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">CONTACT</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2 " type="search " placeholder="Search " aria-label="Search ">
+                <button class="btn btn-outline-secondary " type="submit ">Search</button>
+            </form>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <section id="home" class="d-flex align-items-end justify-content-center">
-        <img src="./1.jpg" class="img-fluid" alt="background-image">
+<section id="home" class="d-flex align-items-end justify-content-center bg-dark" style="height:75vh; width:99vw; position:relative; overflow:hidden;">
+    <img src="./home2.gif" class="img-fluid position-absolute top-0 start-0 w-100 h-60" style="object-fit:cover; z-index:0;" alt="background-image">
 
-        <!--<div class=" container text-white text-center content ">
+    <!--<div class=" container text-white text-center content ">
             <h1 class="display-1 fw-bold text-dark">Family Restaurant</h1>
             <p class="fw-bold text-dark">
                 “Good food is the foundation of genuine happiness.”
@@ -69,7 +96,7 @@
                 <a href="#booking-form " class="btn btn-primary btn-lg me-2 ">Book Your Table</a>
             </div>
         </div>-->
-        <!--<div class="container text-center h-100">
+    <!--<div class="container text-center h-100">
             <h2 class="display-4 fw-bold"></h2>
             <div class="row">
                 <div class="col-md-6">
@@ -85,107 +112,448 @@
                     </div>
                 </div>-->
 
-    </section>
-    <fieldset>
-        <legend>
-            <h1><b>Description </b></h1>
-        </legend>
-        <h4 class="home-subtitle"></h4>
-        <h3><u>Atmosphere</u></h3>
-        <p class="home-description">
-            Every restaurant has a different atmosphere and ambience. Give insight into the kind of atmosphere you want to provide for your customers, whether it’s casual or formal. Let customers know if your place is perfect for date nights, family gatherings, or
-            business lunches. Information about the atmosphere in a restaurant may be commonplace, but it can sometimes be crucial for customers to know before they visit.
+</section>
+
+<section id="homepage" class="w-100 bg-dark py-5">
+    <!--<div class="container" class="w-100 bg-dark py-5">-->
+    <div class="row align-items-start justify-content-center mx-0 w-100">
+        <!-- Right Side Text -->
+        <div class="col-md-6 text-light px-4 overflow-auto" style="max-height: 800px; scrollbar-width: none">
+            <h2 class="display-4 fw-bold">Description</h2>
+            <p>
+                Welcome to Family Restaurant – A Place Where Families Gather! At Family Restaurant, we believe in the joy of sharing great food with the ones you love. Our cozy, family-friendly atmosphere is perfect for everything from casual dinners to special celebrations.
+                We serve a wide variety of delicious, home-style dishes made with fresh, high-quality ingredients – something for every taste and every age. With warm hospitality, a kid-friendly menu, and a welcoming environment, we’re proud to be your
+                home away from home. Come dine with us and make memories around the table!
+            </p>
+            <h3><u>Atmosphere</u></h3>
+            <p class="home-description">
+                Every restaurant has a different atmosphere and ambience. Give insight into the kind of atmosphere you want to provide for your customers, whether it’s casual or formal. Let customers know if your place is perfect for date nights, family gatherings, or
+                business lunches. Information about the atmosphere in a restaurant may be commonplace, but it can sometimes be crucial for customers to know before they visit.
+            </p>
+            <h3><u>Cuisine</u></h3>
+            <p class="home-description">
+                Make sure to highlight your food style in the description. It would be beneficial if the description of your cuisine offered something unique or distinct from other restaurants, making it stand out and special. In addition, use simple words that make
+                people want to try it. For example, you can describe the texture and taste of the cuisine, highlighting the ingredients used.
+            </p>
+            <h3><u>Dining experience</u></h3>
+            <p class="home-description">
+                In addition to high-quality and appealing products, a comfortable and enjoyable dining experience is something that many customers seek. The experiences offered are diverse, including a great wine list or customisable menus. Highlight what makes the dining
+                experience special, whether it’s the attention to detail, the quality of service, or the ambience.
+            </p>
+            <h3><u>Location</u></h3>
+            <p class="home-description">
+                Informing customers about the restaurant’s location is crucial for attracting local customers. This information enables customers to locate your restaurant and facilitates their access to it. A brief reference to the surrounding environment is essential,
+                as being in a busy area or close to popular tourist attractions can also make your description more relevant.
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+
+        <!-- Left Side Image -->
+        <div class="col-md-6 mb-10 mb-md-6">
+            <img src="./3.png" class="img-fluid rounded" alt="Sample Image">
+        </div>
+    </div>
+    </div>
+
+</section>
+<br>
+<section id="about" class="w-100 bg-dark py-5">
+    <div class="row align-items-start justify-content-center mx-0 w-100">
+        <!-- Right Side Text -->
+        <div class="col-md-6 text-light px-4 overflow-auto" style="max-height: 800px; scrollbar-width: none">
+            <h2 class="display-4 fw-bold">About Us</h2>
+            <h4><u>Welcome to Our Family Restaurant</u></h4>
+            <p>
+                Our family restaurant has been serving the community with love and tradition for over 25 years. Built on generations of secret recipes and warm hospitality, we pride ourselves on offering home-style meals made from the freshest ingredients.
+            </p>
+            <p>
+                A Place for Everyone At Family Restaurant, we are more than just a restaurant — we are a part of the community. Our goal is to create a warm, welcoming space where families of all sizes can come together to enjoy hearty meals, good conversations, and
+                lasting memories. Whether it's a casual weekday dinner, a weekend brunch, or a celebration with loved ones, we offer a comforting, relaxed setting that feels like home. Our staff treats every guest like family, and we pride ourselves on
+                friendly service, generous portions, and reasonable prices that won’t break the family budget.
+            </p>
+            <ul>
+                <li>
+                    <p>
+                        At (Family Restaurant), we’re serving up more than (TF). In fact, (RN) Famous (recipe) is one of our unexpected specialties. Reminiscent of butcher shops back in the day, each slow-smoked, sizzling prime chop measures seven-fingers high. Our signature
+                        recipe, that we have perfected for more than four decades, is rubbed with a secret blend of seasonings, cured and roasted on a rotisserie with pecan wood for up to six hours before it’s topped with (RN) signature herb-garlic butter,
+                        then carved tableside.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        (Family Restaurant) specializes in delicious food featuring fresh ingredients and masterful preparation by the (RN) culinary team. Whether you’re ordering a multi-course meal or grabbing a drink and pizza at the bar, (RN’s) lively, casual yet upscale
+                        atmosphere makes it perfect for dining with friends, family, clients and business associates.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        At (Family Restaurant), we’re serving up more than (TF). In fact, (RN) Famous (recipe) is one of our unexpected specialties. Reminiscent of butcher shops back in the day, each slow-smoked, sizzling prime chop measures seven-fingers high. Our signature
+                        recipe, that we have perfected for more than four decades, is rubbed with a secret blend of seasonings, cured and roasted on a rotisserie with pecan wood for up to six hours before it’s topped with (RN) signature herb-garlic butter,
+                        then carved tableside.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The approach to the menu was easy. We had no interest in trying to reinvent food. We went with choices that were popular catering requests — basic, down-home style — just from a wide range of regions. We are known for our generous portions of BBQ, Southern,
+                        Cajun/Creole meals, plus a touch of Caribbean fun. We will tell you now – save room for dessert!
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        (Family Restaurant) is a comfortable, brasserie-style restaurant offering everything you love about ___ cuisine without the attitude. (RN) features classic ___ dishes such as ____ and ____, as well as fresh salads and juicy hamburgers made with fresh-ground
+                        beef.
+                    </p>
+                </li>
+            </ul>
+            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+        <!-- Left Side Image -->
+        <div class="col-md-6 text-center px-4">
+            <img src="./2.png" class="img-fluid rounded" alt="Sample Image">
+        </div>
+    </div>
+</section>
+<br>
+<section id="menu" class="w-100 bg-dark py-5">
+    <div class="row align-items-start justify-content-center mx-0 w-100">
+        <!-- Left Side Image -->
+        <div class="col-md-6 text-center px-4">
+            <img src="./4.png" class="img-fluid rounded" alt="Sample Image">
+        </div>
+
+        <div class="col-md-6 text-light px-4 overflow-auto" style="max-height: 800px; scrollbar-width: none">
+            <h2 class="display-4 fw-bold">Menu</h2>
+            <h4>🍴Menu Description</h4>
+            <p>
+                At Family Restaurant, we believe every meal should feel like home. Our menu is carefully crafted to bring families together around fresh flavors, hearty portions, and something delicious for everyone.
+            </p>
+            <ul>
+                <li>
+                    <p>
+                        Starters to Share – Crispy appetizers, homemade soups, and fresh salads perfect for passing around the table.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Family Favorites – Comfort classics like juicy burgers, wood-fired pizzas, creamy pastas, and homestyle entrées made with love.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Kids’ Corner – Tasty, fun-sized meals with wholesome sides and a sweet treat to keep our youngest guests smiling.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Healthy Choices – Light and nutritious options, including fresh-grilled meats, seasonal vegetables, and vegetarian dishes.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Sweet Endings – Indulgent desserts from warm brownies and ice cream sundaes to fruit pies just like grandma’s.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Beverages for All – Refreshing juices, sodas, coffee, tea, and specialty drinks for parents to unwind.
+                    </p>
+                </li>
+                <p>
+                    No matter what you’re craving, our menu is designed to make every family dinner feel special. Sit back, relax, and let us take care of the cooking—because time together is the best ingredient. ❤️
+                </p>
+            </ul>
 
 
-        </p>
-        <h3><u>Cuisine</u></h3>
-        <p class="home-description">
-            Make sure to highlight your food style in the description. It would be beneficial if the description of your cuisine offered something unique or distinct from other restaurants, making it stand out and special. In addition, use simple words that make
-            people want to try it. For example, you can describe the texture and taste of the cuisine, highlighting the ingredients used.
+            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
 
+    </div>
+</section>
 
-        </p>
-        <h3><u>Dining experience</u></h3>
-        <p class="home-description">
-            In addition to high-quality and appealing products, a comfortable and enjoyable dining experience is something that many customers seek. The experiences offered are diverse, including a great wine list or customisable menus. Highlight what makes the dining
-            experience special, whether it’s the attention to detail, the quality of service, or the ambience.
+<section id="card" class="d-flex align-items-center justify-content-center bg-dark text-center w-100 px-0" style="min-height: 20vh;">
+    <div class="container text-center h-100">
+        <div class="row justify-content-center w-100 mx-0 align-items-stretch">
+            <div class="col-md-3 mb-3 d-flex">
+                <div class="card mx-auto h-100 w-100" style="max-width: 400px;">
+                    <img width="100%" height="200" src="./11.png" class="card-img-top" alt="Travel" />
+                    <div class="card-body">
+                        <h5 class="card-title">🥗 Starters & Shareables</h5>
+                        <ul>
+                            <li>
+                                <p class="card-text">Garlic Bread with Cheese – $5.99</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Chicken Wings (Buffalo, BBQ, or Honey Garlic) – $9.99</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Mozzarella Sticks – $7.99</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Loaded Nachos (Cheese, Salsa, Sour Cream, Jalapeños) – $10.99</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-success">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3 d-flex">
+                <div class="card mx-auto h-100 w-100" style="max-width: 400px;">
+                    <img width="100%" height="200" src="./11.png" class="card-img-top" alt="Travel" />
+                    <div class="card-body">
+                        <h5 class="card-title">🥪 Sandwiches & Burgers</h5>
+                        <p class="card-text">Served with fries or a side salad.</p>
+                        <ul>
+                            <li>
+                                <p class="card-text">Classic Cheeseburger – $11.99</p>
+                            </li>
+                            <li>
+                                <p class="card-text">BBQ Bacon Burger – $13.99</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Grilled Chicken Sandwich – $12.99</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Veggie Burger – $11.49</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-success">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3 d-flex">
+                <div class="card mx-auto h-100 w-100" style="max-width: 400px;">
+                    <img width="100%" height="200" src="./11.png" class="card-img-top" alt="Travel" />
+                    <div class="card-body">
+                        <h5 class="card-title">🍝 Pasta & Comfort Plates</h5>
+                        <ul>
+                            <li>
+                                <p class="card-text">Spaghetti & Meatballs – $13.99</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Chicken Alfredo – $14.99</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Mac & Cheese Bake – $11.99</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Country Fried Chicken with Mashed Potatoes – $15.49</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-success">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3 d-flex">
+                <div class="card mx-auto h-100 w-100" style="max-width: 400px;">
+                    <img width="100%" height="200" src="./11.png" class="card-img-top" alt="Travel" />
+                    <div class="card-body">
+                        <h5 class="card-title">🍕 Family Favorites</h5>
+                        <ul>
+                            <li>
+                                <p class="card-text">Cheese Pizza (Medium) – $12.99</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Pepperoni Pizza – $13.99</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Veggie Pizza – $14.49</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Meat Lovers Pizza – $15.99</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-success">Order Now</a>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-md-3 mb-3 d-flex">
+                <div class="card mx-auto h-100 w-100" style="max-width: 400px;">
+                    <img width="100%" height="200" src="./11.png" class="card-img-top" alt="Travel" />
+                    <div class="card-body">
+                        <h5 class="card-title">👧 Kids’ Corner (Includes Drink & Small Dessert) – $7.99</h5>
+                        <ul>
+                            <li>
+                                <p class="card-text">Mini Cheeseburger & Fries</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Chicken Tenders & Fries</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Grilled Cheese & Tomato Soup</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Kids’ Spaghetti</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-success">Order Now</a>
+                    </div>
+                </div>
+            </div>
 
-        </p>
-        <h3><u>Location</u></h3>
-        <p class="home-description">
-            Informing customers about the restaurant’s location is crucial for attracting local customers. This information enables customers to locate your restaurant and facilitates their access to it. A brief reference to the surrounding environment is essential,
-            as being in a busy area or close to popular tourist attractions can also make your description more relevant.
+            <div class="col-md-3 mb-3 d-flex">
+                <div class="card mx-auto h-100 w-100" style="max-width: 400px;">
+                    <img width="100%" height="200" src="./11.png" class="card-img-top" alt="Travel" />
+                    <div class="card-body">
+                        <h5 class="card-title">🥩 Mains & Grill</h5>
+                        <ul>
+                            <li>
+                                <p class="card-text">Grilled Sirloin Steak (8oz) – $18.99</p>
+                            </li>
+                            <li>
+                                <p class="card-text">BBQ Ribs (Half Rack) – $16.99</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Baked Salmon with Lemon Butter – $17.99</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Roast Turkey Dinner – $15.99</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-success">Order Now</a>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-md-3 mb-3 d-flex">
+                <div class="card mx-auto h-100 w-100" style="max-width: 400px;">
+                    <img width="100%" height="200" src="./11.png" class="card-img-top" alt="Travel" />
+                    <div class="card-body">
+                        <h5 class="card-title">🍰 Desserts</h5>
+                        <ul>
+                            <li>
+                                <p class="card-text">Chocolate Lava Cake – $6.49</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Apple Pie with Ice Cream – $5.99</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Cheesecake (Strawberry or Classic) – $6.49</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Ice Cream Sundae – $4.99</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-success">Order Now</a>
+                    </div>
+                </div>
+            </div>
 
-        </p>
-    </fieldset>
-
-
-    <section id="about" class="d-flex align-items-center justify-content-center bg-light text-center" style="min-height: 60vh;">
-        <div class="container">
-            <!--<h2 class="display-7 fw-bold mb-4">Family Restaurant</h2>-->
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <div class="card mb-4 mx-auto" style="max-width: 500px;">
-                        <img width="100%" height="220" src="./10.jpg" class="card-img-top" alt="Travel" />
-                        <div class="card-body">
-                            <h5 class="card-title">Family Restaurant</h5>
-                            <p class="card-text">
-                                “Good food is the foundation of genuine happiness.”
-                            </p>
-                            <a href="#" class="btn btn-success">Book Your Table</a>
-                        </div>
+            <div class="col-md-3 mb-3 d-flex">
+                <div class="card mx-auto h-100 w-100" style="max-width: 400px;">
+                    <img width="100%" height="200" src="./11.png" class="card-img-top" alt="Travel" />
+                    <div class="card-body">
+                        <h5 class="card-title">☕ Drinks</h5>
+                        <ul>
+                            <li>
+                                <p class="card-text">Soft Drinks – $2.99 (Free Refills)</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Fresh Lemonade – $3.49</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Coffee or Tea – $2.49</p>
+                            </li>
+                            <li>
+                                <p class="card-text">Milkshakes (Chocolate, Vanilla, Strawberry) – $4.99</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-success">Order Now</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-
-    <div class="container text-center">
-        <h2 class="display-4 fw-bold">About Us</h2>
-
-        <img src="./3.jpg" class="img-fluid" weight="100px" height="100px" alt="background-image">
-        <ul>
-            <li>
-                <p class="text-dark">
-                    All of our menu items are inspired by _____ cuisine and have been created by our head chef, (CN), after studying authentic _____ cuisine in ____. Not only do we have fresh flown-in seafood from the northeast, but we also have a variety of handcrafted
-                    cocktails, wine, and beer to choose from. Come dine with us & experience an authentic ______ meal in an intimate dining space. We look forward to serving you!
-                </p>
-            </li>
-            <li>
-                <p class="text-dark">
-                    At (RN), we’re serving up more than (TF). In fact, (RN) Famous (recipe) is one of our unexpected specialties. Reminiscent of butcher shops back in the day, each slow-smoked, sizzling prime chop measures seven-fingers high. Our signature recipe, that we
-                    have perfected for more than four decades, is rubbed with a secret blend of seasonings, cured and roasted on a rotisserie with pecan wood for up to six hours before it’s topped with (RN) signature herb-garlic butter, then carved tableside.
-                </p>
-            </li>
-
-            <p class="text-dark">
-                02. At (RN), we’re serving up more than (TF). In fact, (RN) Famous (recipe) is one of our unexpected specialties. Reminiscent of butcher shops back in the day, each slow-smoked, sizzling prime chop measures seven-fingers high. Our signature recipe, that
-                we have perfected for more than four decades, is rubbed with a secret blend of seasonings, cured and roasted on a rotisserie with pecan wood for up to six hours before it’s topped with (RN) signature herb-garlic butter, then carved tableside.
-            </p>
-            <p class="text-dark">
-                03. (RN) specializes in delicious food featuring fresh ingredients and masterful preparation by the (RN) culinary team. Whether you’re ordering a multi-course meal or grabbing a drink and pizza at the bar, (RN’s) lively, casual yet upscale atmosphere
-                makes it perfect for dining with friends, family, clients and business associates.
-            </p>
-            <p class="text-dark">
-                04. The approach to the menu was easy. We had no interest in trying to reinvent food. We went with choices that were popular catering requests — basic, down-home style — just from a wide range of regions. We are known for our generous portions of BBQ,
-                Southern, Cajun/Creole meals, plus a touch of Caribbean fun. We will tell you now – save room for dessert!
-            </p>
-            <p class="text-dark">
-                05. (RN) is a comfortable, brasserie-style restaurant offering everything you love about ___ cuisine without the attitude. (RN) features classic ___ dishes such as ____ and ____, as well as fresh salads and juicy hamburgers made with fresh-ground beef.
-            </p>
-        </ul>
-
     </div>
-    <div class="d-flex justify-content-center">
-        <a href="#" class="btn btn-mid btn-info">Go To Top</a>
+</section>
+<br>
+<section id="card" class="d-flex align-items-center justify-content-center bg-dark text-center w-100 px-0" style="min-height: 60vh;">
+    <div class="row justify-content-center w-100 mx-0">
+        <div class="col-md-6">
+            <div class="card mb-4 mx-auto" style="max-width: 500px;">
+                <img width="100%" height="220" src="./1.jpg" class="card-img-top" alt="Travel" />
+                <div class="card-body">
+                    <h5 class="card-title">Family Restaurant</h5>
+                    <p class="card-text">
+                        “Good food is the foundation of genuine happiness.”
+                    </p>
+                    <a href="#" class="btn btn-success">Book Your Table</a>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
+<br>
+<!-- Registration and Login Forms Side by Side -->
+<section id="form" class="d-flex align-items-center justify-content-center bg-dark text-center w-100 px-0" style="min-height: 60vh;">
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="form-container h-100">
+                    <div class="form-header">
+                        <h2>🍽 Family Restaurant</h2>
+                        <h5>Registration Form</h5>
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email address</label>
+                            <input type="email" class="form-control" placeholder="Enter email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone</label>
+                            <input type="tel" class="form-control" placeholder="Enter phone number">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" placeholder="Enter password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" placeholder="Re-enter password" required>
+                        </div>
+                        <button type="submit" class="btn btn-restaurant w-100">Register</button>
+                        <p class="text-center mt-3">Already have an account? <a href="#loginForm">Login here</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="loginForm" class="form-container h-100">
+                    <div class="form-header">
+                        <h2>🍴 Welcome Back</h2>
+                        <h5>Login to Continue</h5>
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Email address</label>
+                            <input type="email" class="form-control" placeholder="Enter email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" placeholder="Enter password" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-restaurant w-100">Login</button>
+                        <p class="text-center mt-3"><a href="#">Forgot password?</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <footer class="mt-6 text-center bg-dark text-white py-2">
-        made wit &hearts; Family Restaurant <br> &#169; 1996-2023, Family Restaurant, inc. or its affiliates
-    </footer>
+<div class="d-flex justify-content-center align-items-center">
+    <a href="#" class="btn btn-mid btn-info">Go To Top ↑</a>
+</div>
+
+<footer class="mt-6 text-center bg-dark text-light py-2">
+    made wit &hearts; Family Restaurant <br> &#169; 1996-2023, Family Restaurant, inc. or its affiliates
+</footer>
 </body>
 
 </html>
